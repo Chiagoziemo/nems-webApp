@@ -1,4 +1,5 @@
 /* SmartKON button CSS  */
+
 .switch {
     width: 50px;
     height: 50px;
@@ -6,18 +7,17 @@
 }
 
 .switch input {
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;
-  opacity: 0;
-  z-index: 100;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
-
 
 .switch label {
     display: block;
@@ -28,31 +28,27 @@
     font-size: 30px;
     text-align: center;
     line-height: 50px;
-    text-shadow: 0 2px 1px rgba(0,0,0,0.25);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
-    background: #b25244; /* Fallback */
+    background: #b25244;
+    /* Fallback */
     background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
     background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
     background: -o-linear-gradient(#f7f2f6, #b2ac9e);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
     background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
     background: linear-gradient(#f7f2f6, #b2ac9e);
-
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
-
     transition: all 0.3s ease-out;
     z-index: -1;
-    box-shadow:
-        inset 0 2px 3px rgba(255,255,255,0.13),
-        0 5px 8px rgba(0,0,0,0.3),
-        0 10px 10px 4px rgba(0,0,0,0.3);
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.13), 0 5px 8px rgba(0, 0, 0, 0.3), 0 10px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
 .switch label:before {
-    content: ""; 
+    content: "";
     position: absolute;
     left: -10px;
     right: -10px;
@@ -60,16 +56,18 @@
     bottom: -10px;
     z-index: -1;
     border-radius: inherit;
-    box-shadow: inset 0 10px 10px rgba(0,0,0,0.13); 
-    -webkit-filter:blur(1px); /* Smooth trick */
-    filter: blur(1px); /* Future-proof */
-    -moz-filter:blur(1px);
-    -ms-filter:blur(1px);
-    -o-filter:blur(1px);
+    box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.13);
+    -webkit-filter: blur(1px);
+    /* Smooth trick */
+    filter: blur(1px);
+    /* Future-proof */
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
 }
 
 .switch label:after {
-    content: ""; 
+    content: "";
     position: absolute;
     left: -20px;
     right: -20px;
@@ -77,10 +75,7 @@
     bottom: -20px;
     z-index: -2;
     border-radius: inherit;
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.1),
-        0 1px 2px rgba(0,0,0,0.3),
-        0 0 10px rgba(0,0,0,0.15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .switch .icon-off:after {
@@ -94,29 +89,30 @@
     z-index: -1;
     margin: -35% 0 0 -35%;
     border-radius: 50%;
-    background: #d2cbc3; /* Fallback */
+    background: #d2cbc3;
+    /* Fallback */
     background: linear-gradient(#cbc7bc, #d2cbc3);
     background: -moz-linear-gradient(#cbc7bc, #d2cbc3);
     background: -ms-linear-gradient(#cbc7bc, #d2cbc3);
     background: -o-linear-gradient(#cbc7bc, #d2cbc3);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#cbc7bc), to(#d2cbc3));
     background: -webkit-linear-gradient(#cbc7bc, #d2cbc3);
-    box-shadow:
-        0 -2px 5px rgba(255,255,255,0.05),
-        0 2px 5px rgba(255,255,255,0.1);
-    -webkit-filter:blur(1px); /* Smooth trick */
-    filter: blur(1px); /* Future-proof */
+    box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.05), 0 2px 5px rgba(255, 255, 255, 0.1);
+    -webkit-filter: blur(1px);
+    /* Smooth trick */
+    filter: blur(1px);
+    /* Future-proof */
 }
 
-.switch input:checked ~ label { /* Button */
+.switch input:checked~label {
+    /* Button */
     color: #4AC92B;
-    box-shadow:
-        inset 0 2px 3px rgba(255,255,255,0.13),
-        0 5px 8px rgba(0,0,0,0.35),
-        0 3px 10px 4px rgba(0,0,0,0.2);
-} 
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.13), 0 5px 8px rgba(0, 0, 0, 0.35), 0 3px 10px 4px rgba(0, 0, 0, 0.2);
+}
 
-/* SmartSAV button CSS  */ 
+
+/* SmartSAV button CSS  */
+
 .slider {
     width: 50px;
     height: 50px;
@@ -124,142 +120,374 @@
 }
 
 .slider input {
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;
-  opacity: 0;
-  z-index: 100;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
-
 .slider.smartsav {
-  width: 100px;
-  height: 30px;
+    width: 160px;
+    height: 30px;
 }
 
 .slider.smartsav label {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #a5a39d;
-  border-radius: 40px;
-  box-shadow:
-      inset 0 3px 8px 1px rgba(0,0,0,0.2),
-      0 1px 0 rgba(255,255,255,0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #a5a39d;
+    border-radius: 40px;
+    box-shadow: inset 0 3px 8px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .slider.smartsav label:after {
-  content: ""; 
-  position: absolute;
-  z-index: -1;
-  top: -8px; right: -8px; bottom: -8px; left: -8px;
-  border-radius: inherit;
-  background: #ababab;
-  background: -moz-linear-gradient(#f2f2f2, #ababab);
-  background: -ms-linear-gradient(#f2f2f2, #ababab);
-  background: -o-linear-gradient(#f2f2f2, #ababab);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#ababab));
-  background: -webkit-linear-gradient(#f2f2f2, #ababab);
-  background: linear-gradient(#f2f2f2, #ababab);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3),
-        0 1px 1px rgba(0,0,0,0.25);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    border-radius: inherit;
+    background: #ababab;
+    background: -moz-linear-gradient(#f2f2f2, #ababab);
+    background: -ms-linear-gradient(#f2f2f2, #ababab);
+    background: -o-linear-gradient(#f2f2f2, #ababab);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#ababab));
+    background: -webkit-linear-gradient(#f2f2f2, #ababab);
+    background: linear-gradient(#f2f2f2, #ababab);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .slider.smartsav label:before {
- /* content: ""; */
-  position: absolute;
-  z-index: -1;
-  top: -18px; right: -18px; bottom: -18px; left: -18px;
-  border-radius: inherit;
-  background: #eee;
-  background: -moz-linear-gradient(#e5e7e6, #eee);
-  background: -ms-linear-gradient(#e5e7e6, #eee);
-  background: -o-linear-gradient(#e5e7e6, #eee);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e7e6), to(#eee));
-  background: -webkit-linear-gradient(#e5e7e6, #eee);
-  background: linear-gradient(#e5e7e6, #eee);
-  box-shadow:
-      0 1px 0 rgba(255,255,255,0.5);
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -ms-filter: blur(1px);
-  -o-filter: blur(1px);
-  filter: blur(1px);
+    /* content: ""; */
+    position: absolute;
+    z-index: -1;
+    top: -18px;
+    right: -18px;
+    bottom: -18px;
+    left: -18px;
+    border-radius: inherit;
+    background: #eee;
+    background: -moz-linear-gradient(#e5e7e6, #eee);
+    background: -ms-linear-gradient(#e5e7e6, #eee);
+    background: -o-linear-gradient(#e5e7e6, #eee);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e7e6), to(#eee));
+    background: -webkit-linear-gradient(#e5e7e6, #eee);
+    background: linear-gradient(#e5e7e6, #eee);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
 }
 
 .slider.smartsav label i {
-  display: block;
-  height: 100%;
-  width: 60%;
-  border-radius: inherit;
-  background: silver;
-  position: absolute;
-  z-index: 2;
-  right: 40%;
-  top: 0;
-  background: #b2ac9e;
-  background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
-  background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
-  background: -o-linear-gradient(#f7f2f6, #b2ac9e);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
-  background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
-  background: linear-gradient(#f7f2f6, #b2ac9e);
-  box-shadow:
-      inset 0 1px 0 white,
-      0 0 8px rgba(0,0,0,0.3),
-      0 5px 5px rgba(0,0,0,0.2);
+    display: block;
+    height: 100%;
+    width: 60%;
+    border-radius: inherit;
+    background: silver;
+    position: absolute;
+    z-index: 2;
+    right: 40%;
+    top: 0;
+    background: #b2ac9e;
+    background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -o-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
+    background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
+    background: linear-gradient(#f7f2f6, #b2ac9e);
+    box-shadow: inset 0 1px 0 white, 0 0 8px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .slider.smartsav label i:after {
-  content: "";
-  position: absolute;
-  left: 15%;
-  top: 25%;
-  width: 70%;
-  height: 50%;
-  background: #d2cbc3;
-  background: -moz-linear-gradient(#cbc7bc, #d2cbc3);
-  background: -ms-linear-gradient(#cbc7bc, #d2cbc3);
-  background: -o-linear-gradient(#cbc7bc, #d2cbc3);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#cbc7bc), to(#d2cbc3));
-  background: -webkit-linear-gradient(#cbc7bc, #d2cbc3);
-  background: linear-gradient(#cbc7bc, #d2cbc3);
-  border-radius: inherit;
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 70%;
+    height: 50%;
+    background: #d2cbc3;
+    background: -moz-linear-gradient(#cbc7bc, #d2cbc3);
+    background: -ms-linear-gradient(#cbc7bc, #d2cbc3);
+    background: -o-linear-gradient(#cbc7bc, #d2cbc3);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#cbc7bc), to(#d2cbc3));
+    background: -webkit-linear-gradient(#cbc7bc, #d2cbc3);
+    background: linear-gradient(#cbc7bc, #d2cbc3);
+    border-radius: inherit;
 }
 
 .slider.smartsav label i:before {
-  content: "off";
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: bold;
-  color: rgba(0,0,0,0.4);
-  text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  position: absolute;
-  top: 50%;
-  margin-top: -12px;
-  right: -50%;
+    content: "GEN";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bolder;
+    color: #333;
+    text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 60%;
+    margin-top: -12px;
+    right: -50%;
 }
 
-.slider.smartsav input:checked ~ label {
-  background: #9abb82;
+.slider.smartsav input:checked~label {
+    background: #b2ac9e;
 }
 
-.slider.smartsav input:checked ~ label i {
-  right: -1%;
+.slider.smartsav input:checked~label i {
+    right: -1%;
 }
 
-.slider.smartsav input:checked ~ label i:before {
-  content: "on";
-  right: 115%;
-  color: #82a06a;
-  text-shadow: 
-    0 1px 0 #afcb9b,
-    0 -1px 0 #6b8659;
+.slider.smartsav input:checked~label i:before {
+    content: "MAINS";
+    right: 105%;
+    color: #333;
+    text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #333;
+}
+
+.slider.smartsav1 {
+    width: 160px;
+    height: 30px;
+}
+
+.slider.smartsav1 label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #a5a39d;
+    border-radius: 40px;
+    box-shadow: inset 0 3px 8px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.slider.smartsav1 label:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    border-radius: inherit;
+    background: #ababab;
+    background: -moz-linear-gradient(#f2f2f2, #ababab);
+    background: -ms-linear-gradient(#f2f2f2, #ababab);
+    background: -o-linear-gradient(#f2f2f2, #ababab);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#ababab));
+    background: -webkit-linear-gradient(#f2f2f2, #ababab);
+    background: linear-gradient(#f2f2f2, #ababab);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.slider.smartsav1 label:before {
+    /* content: ""; */
+    position: absolute;
+    z-index: -1;
+    top: -18px;
+    right: -18px;
+    bottom: -18px;
+    left: -18px;
+    border-radius: inherit;
+    background: #eee;
+    background: -moz-linear-gradient(#e5e7e6, #eee);
+    background: -ms-linear-gradient(#e5e7e6, #eee);
+    background: -o-linear-gradient(#e5e7e6, #eee);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e7e6), to(#eee));
+    background: -webkit-linear-gradient(#e5e7e6, #eee);
+    background: linear-gradient(#e5e7e6, #eee);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.slider.smartsav1 label i {
+    display: block;
+    height: 100%;
+    width: 60%;
+    border-radius: inherit;
+    background: silver;
+    position: absolute;
+    z-index: 2;
+    right: 40%;
+    top: 0;
+    background: #b2ac9e;
+    background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -o-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
+    background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
+    background: linear-gradient(#f7f2f6, #b2ac9e);
+    box-shadow: inset 0 1px 0 white, 0 0 8px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider.smartsav1 label i:after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 70%;
+    height: 50%;
+    background: #d2cbc3;
+    background: -moz-linear-gradient(#cbc7bc, #d2cbc3);
+    background: -ms-linear-gradient(#cbc7bc, #d2cbc3);
+    background: -o-linear-gradient(#cbc7bc, #d2cbc3);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#cbc7bc), to(#d2cbc3));
+    background: -webkit-linear-gradient(#cbc7bc, #d2cbc3);
+    background: linear-gradient(#cbc7bc, #d2cbc3);
+    border-radius: inherit;
+}
+
+.slider.smartsav1 label i:before {
+    content: "AUTO";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bolder;
+    color: #333;
+    text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 60%;
+    margin-top: -12px;
+    right: -50%;
+}
+
+.slider.smartsav1 input:checked~label {
+    background: #b2ac9e;
+}
+
+.slider.smartsav1 input:checked~label i {
+    right: -1%;
+}
+
+.slider.smartsav1 input:checked~label i:before {
+    content: "MANUAL";
+    right: 103%;
+    color: #333;
+    text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #333;
+    font-size: 12px;
+}
+
+.led-mains {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #ABFF00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+.led-gen {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #470101 0 -1px 9px, rgb(255, 0, 0) 0 2px 12px;
+}
+
+.led-load {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(0, 119, 255);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #011147 0 -1px 9px, rgb(0, 119, 255) 0 2px 12px;
+}
+
+.led p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.centerBlock {
+    display: table;
+    margin: auto;
+}
+
+
+/* Button for SmartSAV tab */
+
+.button {
+    font-family: "FontAwesome";
+    color: rgb(37, 37, 37);
+    text-shadow: 0px 1px 1px rgba(250, 250, 250, 0.1);
+    font-size: 32pt;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    background-color: rgb(83, 87, 93);
+    box-shadow: 0px 3px 0px 0px rgb(34, 34, 34), /* 1st Shadow */
+    0px 7px 10px 0px rgb(17, 17, 17), /* 1nd Shadow */
+    inset 0px 1px 1px 0px rgba(250, 250, 250, .2), /* 3rd Shadow */
+    inset 0px -12px 35px 0px rgba(0, 0, 0, .5);
+    /* 4th Shadow */
+    width: 70px;
+    height: 70px;
+    border: 0;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 79px;
+}
+
+.button:before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    display: block;
+    z-index: -2;
+    position: absolute;
+    background-color: rgb(26, 27, 29);
+    left: -5px;
+    top: -2px;
+    border-radius: 40px;
+    box-shadow: 0px 1px 0px 0px rgba(250, 250, 250, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button+span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(226, 0, 0);
+    box-shadow: inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5), 0px 0px 3px 2px rgba(226, 0, 0, 0.5);
+    border-radius: 4px;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+}
+
+.button.on {
+    box-shadow: 0px 0px 0px 0px rgb(34, 34, 34), 0px 3px 7px 0px rgb(17, 17, 17), inset 0px 1px 1px 0px rgba(250, 250, 250, .2), inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
+    background-color: rgb(83, 87, 93);
+    top: 3px;
+    color: #fff;
+    text-shadow: 0px 0px 3px rgb(250, 250, 250);
+}
+
+.button:active:before,
+.button.on:before {
+    top: -5px;
+    background-color: rgb(26, 27, 29);
+    box-shadow: 0px 1px 0px 0px rgba(250, 250, 250, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button.on+span {
+    box-shadow: inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5), 0px 0px 3px 2px rgba(135, 187, 83, 0.5);
+    background-color: rgb(135, 187, 83);
 }
