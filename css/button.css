@@ -426,37 +426,61 @@
 .button {
     font-family: "FontAwesome";
     color: rgb(37, 37, 37);
-    text-shadow: 0px 1px 1px rgba(250, 250, 250, 0.1);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
     font-size: 32pt;
     display: block;
     position: relative;
     text-decoration: none;
     background-color: rgb(83, 87, 93);
-    box-shadow: 0px 3px 0px 0px rgb(34, 34, 34), /* 1st Shadow */
-    0px 7px 10px 0px rgb(17, 17, 17), /* 1nd Shadow */
-    inset 0px 1px 1px 0px rgba(250, 250, 250, .2), /* 3rd Shadow */
-    inset 0px -12px 35px 0px rgba(0, 0, 0, .5);
-    /* 4th Shadow */
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.13), 0 5px 8px rgba(0, 0, 0, 0.3), 0 10px 10px 4px rgba(0, 0, 0, 0.3);
     width: 70px;
     height: 70px;
     border: 0;
-    border-radius: 35px;
+    border-radius: 50px;
     text-align: center;
     line-height: 79px;
+    background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -o-linear-gradient(#f7f2f6, #b2ac9e);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
+    background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
+    background: linear-gradient(#f7f2f6, #b2ac9e);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .button:before {
     content: "";
-    width: 80px;
-    height: 80px;
-    display: block;
-    z-index: -2;
     position: absolute;
-    background-color: rgb(26, 27, 29);
-    left: -5px;
-    top: -2px;
-    border-radius: 40px;
-    box-shadow: 0px 1px 0px 0px rgba(250, 250, 250, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    z-index: -1;
+    border-radius: inherit;
+    box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.13);
+    -webkit-filter: blur(1px);
+    /* Smooth trick */
+    filter: blur(1px);
+    /* Future-proof */
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    z-index: -2;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .button+span {
@@ -473,18 +497,28 @@
 }
 
 .button.on {
-    box-shadow: 0px 0px 0px 0px rgb(34, 34, 34), 0px 3px 7px 0px rgb(17, 17, 17), inset 0px 1px 1px 0px rgba(250, 250, 250, .2), inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.13), 0 5px 8px rgba(0, 0, 0, 0.35), 0 3px 10px 4px rgba(0, 0, 0, 0.2);
     background-color: rgb(83, 87, 93);
     top: 3px;
-    color: #fff;
+    color: rgb(86, 192, 16);
     text-shadow: 0px 0px 3px rgb(250, 250, 250);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .button:active:before,
 .button.on:before {
-    top: -5px;
-    background-color: rgb(26, 27, 29);
+    top: -10px;
+    /* background-color: rgb(26, 27, 29); */
     box-shadow: 0px 1px 0px 0px rgba(250, 250, 250, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .button.on+span {
